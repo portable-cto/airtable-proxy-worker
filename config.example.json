@@ -1,0 +1,10 @@
+{
+  airtableBaseUrl: 'api.airtable.com/v0/',
+  airtableApiKey: '123',
+  allowedRoutes: [
+    {
+      method: 'GET',
+      path: 'appsWmNYoIAPDCz8V/Products'
+    }
+  ]
+}
