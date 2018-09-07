@@ -1,0 +1,15 @@
+{
+  "name": "airtable-proxy-worker",
+  "version": "0.1.0",
+  "description": "A Cloudflare Worker that will proxy requests to the Airtable API",
+  "scripts": {
+    "build": "webpack -p --progress --colors",
+  },
+  "main": "dist/worker.js",
+  "author": "Karl L. Hughes <khughes.me@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^4.10.2",
+    "webpack-cli": "^2.1.4"
+  }
+}
