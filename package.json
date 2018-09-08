@@ -4,6 +4,9 @@
   "description": "A Cloudflare Worker that will proxy requests to the Airtable API",
   "scripts": {
     "build": "webpack -p --progress --colors",
+    "prettier": "prettier --write 'src/*.js'",
+    "lint": "prettier --list-different 'src/*.js'",
+    "test": "npm run lint --silent && jest"
   },
   "main": "dist/worker.js",
   "author": "Karl L. Hughes <khughes.me@gmail.com>",
@@ -11,5 +14,25 @@
   "dependencies": {
     "webpack": "^4.10.2",
     "webpack-cli": "^2.1.4"
+  },
+  "devDependencies": {
+    "jest": "^23.5.0",
+    "prettier": "1.14.2"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "globals": {
+      "NODE_ENV": "test"
+    },
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
   }
 }
