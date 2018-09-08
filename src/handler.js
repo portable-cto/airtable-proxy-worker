@@ -36,7 +36,8 @@ export async function handleRequest(req) {
         Authorization: `Bearer ${config.airtableApiKey}`,
         "Content-type": "application/json"
       },
-      method: method
+      method: method,
+      body: req.body,
     });
   } catch (e) {
     console.error(e);

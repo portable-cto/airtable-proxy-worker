@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 - Changed `PREFIX` to `PROXY_PREFIX` to avoid variable clashes.
+- Making sure request body is attached to Airtable request.
   
 ## 0.0.1 - 2018-09-08
 
