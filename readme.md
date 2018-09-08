@@ -2,7 +2,7 @@
 
 > A [Cloudflare Worker](http://developers.cloudflare.com/workers/) that allows you to make secure requests to the [Airtable API](https://airtable.com/api) from your frontend.
 
-[![Travis Build Status](https://travis-ci.org/portable-cto/airtable-proxy-worker.png?branch=master)](https://travis-ci.org/portable-cto/rss-to-email)
+[![Travis Build Status](https://travis-ci.org/portable-cto/airtable-proxy-worker.png?branch=master)](https://travis-ci.org/portable-cto/airtable-proxy-worker)
 [![Coverage Status](https://coveralls.io/repos/github/portable-cto/airtable-proxy-worker/badge.svg)](https://coveralls.io/github/portable-cto/airtable-proxy-worker)
 [![GitHub stars](https://img.shields.io/github/stars/portable-cto/airtable-proxy-worker.svg?style=social&label=Stars)](https://github.com/portable-cto/airtable-proxy-worker)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
