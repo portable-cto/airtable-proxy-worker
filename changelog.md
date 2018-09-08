@@ -15,6 +15,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Removed
 - Nothing yet.
 
+## 0.1.0 - 2018-09-08
+
+### Fixed
+- Changed `PREFIX` to `PROXY_PREFIX` to avoid variable clashes.
+  
 ## 0.0.1 - 2018-09-08
 
 ### Added
