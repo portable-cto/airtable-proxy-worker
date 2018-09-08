@@ -37,7 +37,7 @@ export async function handleRequest(req) {
         "Content-type": "application/json"
       },
       method: method,
-      body: req.body,
+      body: req.body
     });
   } catch (e) {
     console.error(e);
