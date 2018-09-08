@@ -57,7 +57,7 @@ Contributions are welcome and encouraged! When contributing to this repository, 
 
 ### Testing
 
-Before you make a pull request, please add or update any relevant tests. You can run the test suite (uses [Jest](https://jestjs.io/)): `npm test`
+Before you make a pull request, please add or update any relevant tests. You can run the test suite (uses [Jest](https://jestjs.io/)): `npm test:local`
 
 Also run [Prettier](https://prettier.io/) to ensure that code styling is consistent: `npm run prettier`.
 
