@@ -4,6 +4,7 @@
 
 [![Travis Build Status](https://travis-ci.org/portable-cto/airtable-proxy-worker.png?branch=master)](https://travis-ci.org/portable-cto/airtable-proxy-worker)
 [![Coverage Status](https://coveralls.io/repos/github/portable-cto/airtable-proxy-worker/badge.svg)](https://coveralls.io/github/portable-cto/airtable-proxy-worker)
+[![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![GitHub stars](https://img.shields.io/github/stars/portable-cto/airtable-proxy-worker.svg?style=social&label=Stars)](https://github.com/portable-cto/airtable-proxy-worker)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
