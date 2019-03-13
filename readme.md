@@ -20,15 +20,31 @@
 
 ## Usage
 
+### Prerequisites
+
+- Cloudflare account with [Workers](https://www.cloudflare.com/products/cloudflare-workers/) enabled.
+- An [Airtable Base ID](https://community.airtable.com/t/what-is-the-app-id-where-do-i-find-it/2984) and your [Airtable API key](https://support.airtable.com/hc/en-us/articles/219046777-How-do-I-get-my-API-key-).
+- Node and Node Package Manager ([npm](https://www.npmjs.com/get-npm)).
+- Familiarity with your computer's terminal/command line interface.
+
 ### Building Locally
 
 The easiest way to see this project in action is to build your Worker locally and copy/paste it into Cloudflare's UI:
 
-- Clone this repo.
+- Clone this repo: `git clone https://github.com/portable-cto/airtable-proxy-worker.git`
 - Install dependencies: `npm install`
-- Build the worker with your Airtable Base ID and API Key: `AIRTABLE_API_BASE_ID=... AIRTABLE_API_KEY=... npm run build`
+- Build the worker with your Airtable App/Base ID and API Key: `AIRTABLE_API_BASE_ID=appXXXXXXXXX AIRTABLE_API_KEY=keyXXXXXXXXXX npm run build`
+- Upload the built `dist/worker.js` file to [cloudflareworkers.com](https://cloudflareworkers.com/) to test your script.
 
-To preview your worker, upload the built `dist/worker.js` file to [cloudflareworkers.com](https://cloudflareworkers.com/) or your Cloudflare account.
+Your Airtable's tables will be available via the table name. For example, if my Airtable base has a table name `posts`, it would be available at `https://tutorial.cloudflareworkers.com/posts`.
+
+In order to deploy the worker to your own personal worker, upload it via the web UI and click "Deploy".
+
+### Routing
+
+By default, the routes for each of your tables are available at `YOUR_CLOUDFLARE_DOMAIN/RESOURCE_NAME`. For example, if my custom domain is `http://api.example.com` and the table I want to access is called `users`, I would access the API at `http://api.example.com/users`.
+
+You can change this routing using a `PROXY_PREFIX` as described in the **Configuration** section below.
 
 ### Automated Deployment
 
@@ -58,7 +74,7 @@ Contributions are welcome and encouraged! When contributing to this repository, 
 
 ### Testing
 
-Before you make a pull request, please add or update any relevant tests. You can run the test suite (uses [Jest](https://jestjs.io/)): `npm test:local`
+Before you make a pull request, please add or update any relevant tests. You can run the test suite (uses [Jest](https://jestjs.io/)): `npm run test:local`
 
 Also run [Prettier](https://prettier.io/) to ensure that code styling is consistent: `npm run prettier`.
 

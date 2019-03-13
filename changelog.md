@@ -10,7 +10,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Nothing yet.
 
 ### Fixed
-- Nothing yet.
+- Updated NPM dependencies.
+- Improved documentation around installation and usage.
 
 ### Removed
 - Nothing yet.

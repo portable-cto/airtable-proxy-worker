@@ -14,12 +14,12 @@
   "author": "Karl L. Hughes <khughes.me@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "webpack": "^4.10.2",
-    "webpack-cli": "^2.1.4"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
   },
   "devDependencies": {
-    "coveralls": "^3.0.1",
-    "jest": "^23.5.0",
+    "coveralls": "^3.0.3",
+    "jest": "^23.6.0",
     "prettier": "1.14.2"
   },
   "jest": {
