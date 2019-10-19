@@ -46,7 +46,7 @@ export async function handleRequest(req) {
     for (const kv of response.headers.entries()) {
       headers.append(kv[0], kv[1]);
     }
-    headers.set('Cache-Control', 'max-age=' + config.cacheTime);
+    headers.set("Cache-Control", "max-age=" + config.cacheTime);
 
     return new Response(body, {
       status: response.status,
