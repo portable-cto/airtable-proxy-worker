@@ -10,6 +10,7 @@ module.exports = {
         airtableBaseId: JSON.stringify(process.env.AIRTABLE_API_BASE_ID || ''),
         airtableApiVersion: JSON.stringify(process.env.AIRTABLE_API_VERSION || 'v0'),
         airtableApiKey: JSON.stringify(process.env.AIRTABLE_API_KEY || ''),
+        cacheTime: JSON.stringify(process.env.PROXY_CACHE_TIME || 0),
         prefix: JSON.stringify(process.env.PROXY_PREFIX || ''),
         allowedTargets: JSON.stringify(process.env.ALLOWED_TARGETS || '*'),
       },

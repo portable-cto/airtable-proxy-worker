@@ -66,6 +66,7 @@ In addition to the required `AIRTABLE_API_KEY` and `AIRTABLE_API_BASE_ID` variab
 - `AIRTABLE_API_VERSION` - Defaults to `v0`.
 - `PROXY_PREFIX` - Use this if your Cloudflare worker's routes are prefixed by something before the Airtable resource name. For example, you may want to call `mycustomdomain.com/api/posts` instead of `mycustomdomain.com/posts`. In this example, you would add `api` as a prefix.
 - `ALLOWED_TARGETS` - Use this to lock down your Airtable API to specific resources and methods. For example, a stringified JSON object like this: `'[{"resource":"posts","method":"GET,PUT"},{"resource":"comments","method":"*"}]'` will allow `GET` and `PUT` requests on the `posts` resource and all request methods on the `comments` resource. Allows all methods for all resources by default.
+- `PROXY_CACHE_TIME` - Defaults to `0`. The number of seconds set on the `Cache-Control` header to use Cloudflare's caching.
 
 
 ## Contributing
